@@ -14,7 +14,7 @@
 ## Description
 This project is a web-based Project Management Form that allows users to manage project details effectively. The form integrates with [JsonPowerDB](https://login2explore.com/jpdb/) to provide CRUD (Create, Read, Update, Delete) operations for project data. The form allows users to enter project details such as Project ID, Project Name, Assigned To, Assignment Date, and Deadline, and stores this information in the database.
 
-View live form at 
+View live form at https://lavanyadhiman.github.io/Login2Explore/
 
 The form is designed with a user-friendly interface and provides real-time validation and feedback. It checks if a project ID exists in the database and enables appropriate actions based on the result.
 
@@ -58,5 +58,4 @@ The application follows this workflow:
    - User clicks **Update** to save changes.
 
 ## How to Use
-1. Clone the repository:  
-   👉 If hosted on GitHub, use:  
+Clone the repository  or visit https://lavanyadhiman.github.io/Login2Explore/ to view the live form
