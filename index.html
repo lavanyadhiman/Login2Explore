@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Management Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Project Management Form</h2>
+    <div id="status" class="alert"></div>
+    <form id="projectForm" method="post">
+        <div class="form-group">
+            <span><label for="projectId">Project ID:</label> <label id="projectIdMsg"></label></span>
+            <input type="text" class="form-control" name="projectId" id="projectId" placeholder="Enter Project ID" required>
+        </div>
+        <div class="form-group">
+            <label for="projectName">Project Name:</label>
+            <input type="text" class="form-control" id="projectName" placeholder="Enter Project Name" name="projectName" disabled>
+        </div>
+        <div class="form-group">
+            <label for="assignedTo">Assigned To:</label>
+            <input type="text" class="form-control" id="assignedTo" placeholder="Enter Assignee Name" name="assignedTo" disabled>
+        </div>
+        <div class="form-group">
+            <label for="assignmentDate">Assignment Date:</label>
+            <input type="date" class="form-control" id="assignmentDate" name="assignmentDate" disabled>
+        </div>
+        <div class="form-group">
+            <label for="deadline">Deadline:</label>
+            <input type="date" class="form-control" id="deadline" name="deadline" disabled>
+        </div>
+        <div class="form-group">
+            <input type="button" class="btn btn-primary" id="saveBtn" value="Save" onclick="saveProject();" disabled>
+            <input type="button" class="btn btn-success" id="updateBtn" value="Update" onclick="updateProject();" disabled>
+            <input type="button" class="btn btn-default" id="resetBtn" value="Reset" onclick="resetForm();" disabled>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
